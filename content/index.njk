@@ -2,20 +2,19 @@
 layout: "layouts/default.njk"
 ---
 
-<h1>hello world</h1>
-
-<h2>Alla 5k lopp</h2>
-{% set posts = collections.events | include('data.distances', '5k') %} 
+<h2>Alla distanser</h2>
+{% set posts = collections.eventDistances %} 
 <ul>
     {% for post in posts %}
-    <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    <li><a href="/distans/{{ post.slug }}">{{ post.title }}</a></li>
     {% endfor %}
 </ul>
 
-<h2>Alla 10k lopp</h2>
-{% set posts = collections.events | include('data.distances', '10k') %} 
+<h2>Alla städer</h2>
+{% set posts = collections.eventCities %} 
 <ul>
     {% for post in posts %}
-    <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    <li><a href="/stad/{{ post.slug }}">{{ post.title }}</a></li>
     {% endfor %}
 </ul>
+

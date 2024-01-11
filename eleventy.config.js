@@ -12,7 +12,7 @@ function getAllKeyValues(collectionArray, key) {
   // flatten values array
   allValues = lodash.flattenDeep(allValues);
   // to lowercase
-  allValues = allValues.map((item) => item.toLowerCase());
+  //allValues = allValues.map((item) => item.toLowerCase());
   // remove duplicates
   allValues = [...new Set(allValues)];
   // order alphabetically
@@ -52,6 +52,18 @@ module.exports = (eleventyConfig) => {
     }));
 
     return blogCategories;
+  });
+
+  eleventyConfig.addCollection("eventCities", function (collection) {
+    let allCities = getAllKeyValues(
+      collection.getFilteredByGlob("./content/events/*.md"),
+      "cities"
+    );
+
+    return allCities.map((city) => ({
+      title: city,
+      slug: strToSlug(city),
+    }));
   });
 
   eleventyConfig.addFilter("include", require("./filters/include.js"));

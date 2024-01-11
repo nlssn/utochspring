@@ -1,6 +1,7 @@
 ---
 title: Det första loppet
-distances: ["5k", "10k"]
+distances: ["5km", "10km"]
+cities: "Kalmar"
 ---
 
 Lite content för detta loppet

@@ -1,0 +1,17 @@
+---
+pagination:
+  data: collections.eventCities
+  size: 1
+  alias: city
+permalink: /stad/{{ city.slug }}/
+layout: "layouts/default.njk"
+---
+
+<h1>Alla lopp i {{ city.title }}</h1>
+
+{% set posts = collections.events | include('data.cities', distance.title) %} 
+<ul>
+  {% for post in posts %}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,17 @@
+---
+pagination:
+  data: collections.eventDistances
+  size: 1
+  alias: distance
+permalink: /distans/{{ distance.slug }}/
+layout: "layouts/default.njk"
+---
+
+<h1>Alla {{ distance.title }} lopp</h1>
+
+{% set posts = collections.events | include('data.distances', distance.title) %} 
+<ul>
+  {% for post in posts %}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+  {% endfor %}
+</ul>
