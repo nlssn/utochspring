@@ -1,5 +1,5 @@
 ---
-title: Blodomloppet Dals-Ed
+title: Blodomloppet Hudiksvall
 date: 2024-05-20
 distances:
   [
