@@ -1,6 +1,6 @@
 ---
-title: Blodomloppet Dals-Ed
-date: 2024-05-13
+title: Blodomloppet Linköping
+date: 2024-05-30
 distances:
   [
     "10km",
@@ -16,7 +16,7 @@ distances:
     "200m",
     "100m",
   ]
-url: https://blodomloppet.se/vara-lopp/dalsed/
-signUpUrl: https://anmalmig.nu/anmalan/a0115e8f-9751-4a26-b7e5-15255af2e029/
-cities: ["Dals-Ed"]
+url: https://blodomloppet.se/vara-lopp/linkoping/
+signUpUrl: https://anmalmig.nu/anmalan/074e6e87-6680-4ffb-9e3b-44ba05eb323e/
+cities: ["Linköping"]
 ---
