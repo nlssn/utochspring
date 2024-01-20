@@ -1,9 +1,30 @@
 ---
+title: Hem
 layout: "layouts/default.njk"
 ---
 
+<section class="hero">
+    <h2>Vad är detta?</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iste dolores nobis ratione, ipsum possimus ex, quis, dignissimos consequatur dolore perspiciatis accusantium blanditiis ab saepe.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora adipisci optio corrupti, quo tenetur officiis?</p>
+</section>
+
+<section class="newsletter">
+    <h2>Prenumerera på vårt nyhetsbrev</h2>
+    <p>Vill du har nyheter om kommande lopp och annat gött direkt i din inkorg?</p>
+    <form action="">
+        <input type="email" name="email" id="email" placeholder="Ange din mejladress">
+        <input type="submit" value="Javisst!">
+    </form>
+</section>
+
+<section class="training-programs">
+    <h2>Sugen på att börja springa?</h2>
+    <p>Kolla in våra olika löpprogram. Vi hjälper dig från första träningspasset till ditt första lopp!</p>
+</section>
+
 <h2>Alla distanser</h2>
-{% set posts = collections.eventDistances %} 
+{% set posts = collections.eventDistances %}
 <ul>
     {% for post in posts %}
     <li><a href="/distans/{{ post.slug }}">{{ post.title }}</a></li>
@@ -11,10 +32,9 @@ layout: "layouts/default.njk"
 </ul>
 
 <h2>Alla städer</h2>
-{% set posts = collections.eventCities %} 
+{% set posts = collections.eventCities %}
 <ul>
     {% for post in posts %}
     <li><a href="/stad/{{ post.slug }}">{{ post.title }}</a></li>
     {% endfor %}
 </ul>
-

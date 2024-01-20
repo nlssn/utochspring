@@ -68,6 +68,8 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addFilter("include", require("./filters/include.js"));
 
+  eleventyConfig.addPassthroughCopy('public/');
+
   return {
     // Control which files Eleventy will process
     // e.g.: *.md, *.njk, *.html, *.liquid

@@ -1,21 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ metadata.lang }}">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ut &amp; Spring</title>
+    <title>{{ title }} &middot; {{ metadata.site.title }}</title>
+
+    <link rel="stylesheet" href="/public/style.css">
 </head>
+
 <body>
-    <header id="masthead" class="site-header">
-        <h1>Ut &amp; Spring</h1>
-    </header>
+    <div class="site">
 
-    <main class="page-content">
-        {{ content | safe }}
-    </main>
+        <header id="masthead" class="site-header">
+            <div class="wrapper width-wide">
+                <div class="branding">
+                    <a href="/">
+                        <h1>{{ metadata.site.title }}</h1>
+                        <p>{{ metadata.site.slogan }}</p>
+                    </a>
+                </div>
+            </div>
+        </header>
 
-    <footer class="site-footer">
-        <p>Kåpyrajt osv</p>
-    </footer>
+        <div class="site-content">
+            <div class="wrapper width-content">
+                {{ content | safe }}
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <div class="wrapper width-wide">
+                <p class="copyright">&copy 2024, {{ metadata.site.title }}</p>
+            </div>
+        </footer>
+
+    </div>
 </body>
+
 </html>
