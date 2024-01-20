@@ -1,5 +1,5 @@
 ---
-title: Blodomloppet Linköping
+title: Blodomloppet Uppsala
 date: 2024-05-28
 distances:
   [
@@ -16,7 +16,7 @@ distances:
     "200m",
     "100m",
   ]
-url: https://blodomloppet.se/vara-lopp/linkoping/
-signUpUrl: https://anmalmig.nu/anmalan/074e6e87-6680-4ffb-9e3b-44ba05eb323e/
-cities: ["Linköping"]
+url: https://blodomloppet.se/vara-lopp/uppsala/
+signUpUrl: https://anmalmig.nu/anmalan/263c4ca9-0ee7-4bc9-a382-6669bb480e20/
+cities: ["Uppsala"]
 ---
