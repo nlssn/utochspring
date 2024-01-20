@@ -67,8 +67,9 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addFilter("include", require("./filters/include.js"));
+  eleventyConfig.addFilter("prettyDate", require("./filters/date.js"));
 
-  eleventyConfig.addPassthroughCopy('public/');
+  eleventyConfig.addPassthroughCopy("public/");
 
   return {
     // Control which files Eleventy will process

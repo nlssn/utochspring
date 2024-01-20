@@ -4,6 +4,10 @@ layout: "layouts/default.njk"
 
 <h1>{{ title }}</h1>
 
+{% if ( date ) %}
+<p>Datum: {{ date | prettyDate }}</p>
+{% endif %}
+
 <div>
   {% if ( url ) %}
   <a class="btn" href="{{ url }}" target="_blank">Mer info</a>
