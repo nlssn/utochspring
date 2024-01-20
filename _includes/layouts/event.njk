@@ -4,10 +4,26 @@ layout: "layouts/default.njk"
 
 <h1>{{ title }}</h1>
 
+<div>
+  {% if ( url ) %}
+  <a class="btn" href="{{ url }}" target="_blank">Mer info</a>
+  {% endif %}
+  
+  {% if ( signUpUrl ) %}
+  <a class="btn" href="{{ signUpUrl }}" target="_blank">Anmäl dig</a>
+  {% endif %}
+</div>
+
+{% if ( distances ) %}
+<h2>Distanser</h2>
 <ul>
   {% for distance in distances %}
   <li>{{ distance }}</li>
   {% endfor %}
 </ul>
+{% endif %}
 
+{% if ( content ) %}
+<h2>Beskrivning</h2>
 {{ content | safe }}
+{% endif %}
