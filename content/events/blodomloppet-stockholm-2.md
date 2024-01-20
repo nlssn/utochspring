@@ -1,5 +1,5 @@
 ---
-title: Blodomloppet Stockholm
+title: Blodomloppet Stockholm (Dag 2)
 date: 2024-06-12
 distances:
   [
