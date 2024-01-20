@@ -5,6 +5,8 @@ pagination:
   alias: city
 permalink: /stad/{{ city.slug }}/
 layout: "layouts/default.njk"
+eleventyComputed:
+  title: "Lopp i närheten av {{ city.title }}"
 ---
 
 <h1>Alla lopp i {{ city.title }}</h1>

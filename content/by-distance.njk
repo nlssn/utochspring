@@ -1,11 +1,12 @@
 ---
-title: Alla {{ distance.title }} lopp
 pagination:
   data: collections.eventDistances
   size: 1
   alias: distance
 permalink: /distans/{{ distance.slug }}/
 layout: "layouts/default.njk"
+eleventyComputed:
+  title: "Alla {{ distance.title }} lopp"
 ---
 
 <h1>Alla {{ distance.title }} lopp</h1>
